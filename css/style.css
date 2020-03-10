@@ -1,0 +1,53 @@
+/* DEBUG:  */
+section {
+  /* height: 200px; */
+  background-color: blue;
+  border: 1px solid black;
+}
+
+div {
+  background-color: red;
+  border: 1px solid black;
+  /* width: 100px; */
+}
+
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regole home */
+#home {
+  display: flex;
+  height: calc(100vh - 90px);
+}
+
+.nav {
+  width: 230px;
+}
+
+.main-page {
+  width: calc(100% - 230px);
+}
+
+/* regole player */
+#player {
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  .nav {
+    width: 50px;
+  }
+
+  .main-page {
+    width: calc(100% - 50px);
+  }
+}
