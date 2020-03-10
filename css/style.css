@@ -1,6 +1,6 @@
 /* DEBUG:  */
-section {
-  /* height: 200px; */
+/* section {
+  height: 200px;
   background-color: blue;
   border: 1px solid black;
 }
@@ -8,7 +8,7 @@ section {
 div {
   background-color: red;
   border: 1px solid black;
-  /* width: 100px; */
+  width: 100px;
 }
 
 .sidebar div {
@@ -27,8 +27,7 @@ div {
 
 #player div {
   width: 150px;
-}
-
+} */
 /* regole generali */
 * {
   margin: 0;
@@ -48,16 +47,37 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.crea-playlist {
+  display: flex;
+}
+
+.bottom-side {
+  margin-top: auto;
+}
+
+.install {
+  border-bottom: 1px solid white;
+  display: flex;
 }
 
 .utente {
-  margin-top: auto;
+  display: flex;
 }
 
 /* regole sezione principale */
 .main-page {
   width: calc(100% - 230px);
   padding-top: 90px;
+  background-color: #141922;
 }
 
 .main-page .upgrade {
@@ -77,6 +97,7 @@ div {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #282828;
 }
 
 /* media query */
