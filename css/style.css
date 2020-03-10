@@ -11,6 +11,24 @@ div {
   /* width: 100px; */
 }
 
+.sidebar div {
+  min-height: 100px;
+  background-color: pink;
+}
+
+.main-page div {
+  height: 50px;
+  background-color: white;
+}
+
+.main-page .upgrade {
+  background-color: green;
+}
+
+#player div {
+  width: 150px;
+}
+
 /* regole generali */
 * {
   margin: 0;
@@ -24,11 +42,29 @@ div {
   height: calc(100vh - 90px);
 }
 
-.nav {
+/* regole sidebar */
+.sidebar {
   width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+.utente {
+  margin-top: auto;
+}
+
+/* regole sezione principale */
 .main-page {
+  width: calc(100% - 230px);
+  padding-top: 90px;
+}
+
+.main-page .upgrade {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 90px;
   width: calc(100% - 230px);
 }
 
@@ -39,15 +75,25 @@ div {
   bottom: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* media query */
 @media screen and (max-width: 600px) {
-  .nav {
+  .sidebar {
     width: 50px;
   }
 
   .main-page {
+    width: calc(100% - 50px);
+  }
+
+  .main-page .upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 90px;
     width: calc(100% - 50px);
   }
 }
