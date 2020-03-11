@@ -80,9 +80,9 @@ ul {
 /* regole sidebar */
 .sidebar {
   width: 230px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   background-color: #000;
   color: #fff;
   padding: 20px;
@@ -120,7 +120,7 @@ ul {
 .playlist {
   margin: 20px 0;
   overflow-y: scroll;
-  min-height: 200px;
+  min-height: 150px;
 }
 
 .btn-plus {
@@ -201,6 +201,7 @@ ul {
 /* regole sezione principale */
 .main-page {
   width: calc(100vw - 230px);
+  height: 100%;
   padding: 90px 10px 10px 10px;
   background-color: #141922;
   overflow-y: scroll;
@@ -266,11 +267,15 @@ ul {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  flex-basis: calc(100% / 6);
+  width: calc(100% / 6);
   align-items: center;
 }
 
-.frame img {
+.box-art {
+  position: relative;
+}
+
+.box-art img {
   width: 100%;
   height: auto;
 }
@@ -285,12 +290,6 @@ ul {
 
 .frame:hover .layover {
   display: flex;
-}
-
-.box-art {
-  width: 100%;
-  height: auto;
-  position: relative;
 }
 
 .layover {
@@ -493,6 +492,7 @@ ul {
 
   .contenuto {
     flex-wrap: nowrap;
+    overflow-x: scroll;
   }
 
   .frame {
@@ -576,5 +576,12 @@ ul {
 
   .scroll-bar {
     width: 60%;
+  }
+}
+
+/* MEDIA QUERY BONUS 350px HEIGHT */
+@media screen and (max-height:350px) {
+  .bottom-side {
+    display: none;
   }
 }
