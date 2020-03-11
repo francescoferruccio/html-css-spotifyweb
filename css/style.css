@@ -277,6 +277,42 @@ ul {
   background-color: #282828;
 }
 
+.player-left {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.player-left img {
+  height: 60%;
+  width: auto;
+  margin-left: 20px;
+}
+
+.brano {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.brano .titolo {
+  color: #fff;
+  font-weight: bold;
+}
+
+.save i {
+  color: grey;
+  margin-right: 5px;
+}
+
+.player-control {
+  width: 50%;
+}
+
+.player-right {
+  width: 25%;
+}
+
 /* media query */
 /* MD */
 @media screen and (max-width: 992px) {
