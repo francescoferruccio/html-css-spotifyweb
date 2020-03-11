@@ -63,6 +63,10 @@ a {
   font-size: 13px;
 }
 
+a:hover {
+  color: #fff;
+}
+
 ul {
   list-style-type: none;
 }
@@ -104,7 +108,11 @@ ul {
   align-items: center;
 }
 
-.crea-playlist {
+.nav ul li:hover a span {
+  color: #fff;
+}
+
+.nav ul li a {
   display: flex;
   align-items: center;
 }
@@ -125,6 +133,19 @@ ul {
   color: #000;
   font-size: 18px;
   margin-right: 10px;
+}
+
+.crea-playlist a {
+  display: flex;
+  align-items: center;
+}
+
+.crea-playlist:hover span {
+  color: #fff;
+}
+
+.crea-playlist:hover .btn-plus {
+  background-color: #fff;
 }
 
 .crea-playlist span {
@@ -152,6 +173,10 @@ ul {
 .install img {
   width: 20px;
   margin-right: 10px;
+}
+
+.install:hover span {
+  color: #fff;
 }
 
 .utente {
