@@ -40,7 +40,6 @@ div {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  min-width: 480px;
 }
 
 h2 {
@@ -226,7 +225,7 @@ ul {
   border: 2px solid #fff;
   padding: 10px 50px;
   border-radius: 25px;
-  margin-right: 20px;
+  margin-right: 40px;
   ;
 }
 
@@ -351,6 +350,8 @@ ul {
 .player-left img {
   min-height: 50%;
   max-height: 100%;
+  width: 70px;
+  min-width: 50px;
 }
 
 .brano {
