@@ -40,6 +40,7 @@ div {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  min-width: 480px;
 }
 
 h2 {
@@ -268,6 +269,8 @@ ul {
 /* regole player */
 #player {
   height: 90px;
+  min-width: 480px;
+  padding: 10px 20px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -285,9 +288,8 @@ ul {
 }
 
 .player-left img {
-  height: 60%;
-  width: auto;
-  margin-left: 20px;
+  min-height: 50%;
+  max-height: 100%;
 }
 
 .brano {
@@ -316,7 +318,7 @@ ul {
 }
 
 .top-control {
-  width: 40%;
+  width: 300px;
   height: 50%;
   color: #fff;
   display: flex;
@@ -341,8 +343,14 @@ ul {
 .progress {
   width: 70%;
   height: 5px;
-  background-color: grey;
-  opacity: 0.5;
+  background-color: rgba(176, 176, 176, 0.3);
+  border-radius: 2px;
+}
+
+.overlay-progress {
+  height: 100%;
+  width: 25%;
+  background-color: rgba(176, 176, 176, 1);
   border-radius: 2px;
 }
 
@@ -369,62 +377,74 @@ ul {
     flex-basis: calc(100% / 2);
   }
 
-  /* XS */
-  @media screen and (max-width: 576px) {
-    .sidebar {
-      width: 50px;
-      padding: 0;
-      align-items: center;
-    }
+  .top-control {
+    width: 200px;
+  }
+}
 
-    .logo {
-      display: none;
-    }
+/* XS */
+@media screen and (max-width: 576px) {
+  .sidebar {
+    width: 50px;
+    padding: 0;
+    align-items: center;
+  }
 
-    .logo-small {
-      display: block;
-      width: 25px;
-      margin: 5px 0;
-    }
+  .logo {
+    display: none;
+  }
 
-    .nav img {
-      margin: 5px 0;
-    }
+  .logo-small {
+    display: block;
+    width: 25px;
+    margin: 5px 0;
+  }
 
-    .sidebar span {
-      display: none;
-    }
+  .nav img {
+    margin: 5px 0;
+  }
 
-    .sidebar .playlist {
-      display: none;
-    }
+  .sidebar span {
+    display: none;
+  }
 
-    .bottom-side {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px;
-    }
+  .sidebar .playlist {
+    display: none;
+  }
 
-    .bottom-side img {
-      margin: 0;
-    }
+  .bottom-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-    .install {
-      border: none;
-    }
+  .bottom-side img {
+    margin: 0;
+  }
 
-    .main-page {
-      width: calc(100% - 50px);
-    }
+  .install {
+    border: none;
+  }
 
-    .main-page .upgrade {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 90px;
-      width: calc(100% - 50px);
-    }
+  .main-page {
+    width: calc(100% - 50px);
+  }
+
+  .main-page .upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 90px;
+    width: calc(100% - 50px);
+  }
+
+  .top-control {
+    width: 150px;
+  }
+
+  .scroll-bar {
+    width: 60%;
   }
 }
