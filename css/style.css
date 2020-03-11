@@ -47,7 +47,8 @@ h2 {
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 span {
@@ -222,8 +223,9 @@ ul {
   margin: 20px 0;
 }
 
-.cont-recent {
+.contenuto {
   width: 100%;
+  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -250,6 +252,19 @@ ul {
   margin: 20px 0;
 }
 
+.personal h2 {
+  margin-bottom: 10px;
+}
+
+/* regole sez popular */
+.popular h2 {
+  margin-bottom: 10px;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
 /* regole player */
 #player {
   height: 90px;
@@ -265,6 +280,10 @@ ul {
 /* media query */
 /* MD */
 @media screen and (max-width: 992px) {
+  .link-main ul {
+    justify-content: space-around;
+  }
+
   .frame {
     flex-basis: calc(100% / 4);
   }
