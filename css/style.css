@@ -273,6 +273,38 @@ ul {
   color: #fff;
 }
 
+.frame:hover {
+  cursor: pointer;
+}
+
+.frame:hover .layover {
+  display: flex;
+}
+
+.box-art {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.layover {
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.layover i {
+  font-size: 60px;
+  color: #fff;
+}
+
 /* regole sez personal */
 .personal {
   margin: 20px 0;
