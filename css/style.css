@@ -216,6 +216,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
 }
 
 .btn-upgrade {
@@ -490,8 +491,13 @@ ul {
     justify-content: space-around;
   }
 
+  .contenuto {
+    flex-wrap: nowrap;
+  }
+
   .frame {
     flex-basis: calc(100% / 4);
+    flex-shrink: 0;
   }
 }
 
