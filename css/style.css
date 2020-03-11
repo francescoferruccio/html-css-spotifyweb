@@ -174,8 +174,9 @@ ul {
 /* regole sezione principale */
 .main-page {
   width: calc(100vw - 230px);
-  padding-top: 90px;
+  padding: 90px 10px 10px 10px;
   background-color: #141922;
+  overflow-y: scroll;
 }
 
 .main-page .upgrade {
@@ -218,7 +219,7 @@ ul {
 
 /* regole sezione recent */
 .recent {
-  margin: 10px;
+  margin: 20px 0;
 }
 
 .cont-recent {
@@ -244,6 +245,11 @@ ul {
   color: #fff;
 }
 
+/* regole sez personal */
+.personal {
+  margin: 20px 0;
+}
+
 /* regole player */
 #player {
   height: 90px;
@@ -258,20 +264,20 @@ ul {
 
 /* media query */
 /* MD */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 992px) {
   .frame {
     flex-basis: calc(100% / 4);
   }
 }
 
 /* S */
-@media screen and (max-width: 878px) {
+@media screen and (max-width: 768px) {
   .frame {
     flex-basis: calc(100% / 2);
   }
 
   /* XS */
-  @media screen and (max-width: 638px) {
+  @media screen and (max-width: 576px) {
     .sidebar {
       width: 50px;
       padding: 0;
