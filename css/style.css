@@ -236,12 +236,13 @@ ul {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: calc(100% / 6);
+  flex-basis: calc(100% / 6);
   align-items: center;
 }
 
 .box-art {
   position: relative;
+  min-width: 150px;
 }
 
 .box-art img {
