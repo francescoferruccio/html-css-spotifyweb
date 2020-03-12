@@ -552,3 +552,13 @@ ul {
     display: none;
   }
 }
+
+@media screen and (max-height:500px) {
+  .main-page {
+    padding-top: 0;
+  }
+
+  .main-page .upgrade {
+    display: none;
+  }
+}
