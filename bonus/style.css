@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* debug */
 .faccia {
   background-color: yellow;
@@ -11,55 +5,76 @@
 }
 
 footer {
-  height: 100px;
   background-color: green;
 }
 
 footer div {
   background-color: red;
-  width: 100px;
-  height: 90px;
+}
+
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* regole header */
 header {
-  height: 100px;
-  background-color: grey;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: #000;
+  color: #fff;
 }
 
-.partecipanti {
-  background-color: #fff;
-}
+.partecipanti {}
 
 .screen-control {
-  background-color: #fff;
   position: absolute;
   right: 0;
 }
 
 /* regole main */
 main {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 130px);
   background-color: black;
+  overflow-y: scroll;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 .faccia {
   flex-basis: calc(100% / 4);
+}
+
+.faccia img {
+  width: 100%;
   min-width: 200px;
-  height: 100px;
+  height: auto;
 }
 
 /* regole footer */
 footer {
+  height: 100px;
   display: flex;
   justify-content: space-between;
+}
+
+footer>div {
+  height: 100%;
+  display: flex;
+}
+
+.big-btn {
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+  height: 100%;
 }
