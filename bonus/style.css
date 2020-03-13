@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* debug */
+.faccia {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+footer {
+  height: 100px;
+  background-color: green;
+}
+
+footer div {
+  background-color: red;
+  width: 100px;
+  height: 90px;
+}
+
+/* regole header */
+header {
+  height: 100px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.partecipanti {
+  background-color: #fff;
+}
+
+.screen-control {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+}
+
+/* regole main */
+main {
+  height: calc(100vh - 200px);
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.faccia {
+  flex-basis: calc(100% / 4);
+  min-width: 200px;
+  height: 100px;
+}
+
+/* regole footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
