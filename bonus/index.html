@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/09ad75d9b1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Replica Zoom</title>
 </head>
@@ -10,11 +11,11 @@
 <body>
   <header>
     <div class="partecipanti">
-      <span>Total non-video participants: 4</span>
+      <span>Total non-video participants: 4 <i class="fas fa-caret-down"></i></span>
     </div>
     <div class="screen-control">
-      <button type="button" name="button">Speaker view</button>
-      <button type="button" name="button">icon</button>
+      <button class="top-btn" type="button" name="button"><i class="far fa-window-maximize"></i> Speaker view</button>
+      <button class="top-btn" type="button" name="button"><i class="fas fa-compress-arrows-alt"></i></button>
     </div>
   </header>
 
@@ -86,33 +87,56 @@
   <footer>
     <div class="foot-left">
       <div class="big-btn">
-        test
+        <div class="big-btn-content">
+          <i class="fas fa-microphone"></i>
+          <span>Mute</span>
+        </div>
+        <i class="fas fa-chevron-up"></i>
       </div>
       <div class="big-btn">
-
+        <div class="big-btn-content">
+          <i class="fas fa-video"></i>
+          <span>Stop Video</span>
+        </div>
+        <i class="fas fa-chevron-up"></i>
       </div>
     </div>
 
     <div class="foot-center">
       <div class="big-btn">
-
+        <div class="big-btn-content">
+          <i class="fas fa-user-plus"></i>
+          <span>Invite</span>
+        </div>
       </div>
       <div class="big-btn">
-
+        <div class="big-btn-content">
+          <i class="fas fa-microphone"></i>
+          <span>Stop Video</span>
+        </div>
       </div>
       <div class="big-btn">
-
+        <div class="big-btn-content">
+          <i class="fas fa-microphone"></i>
+          <span>Stop Video</span>
+        </div>
       </div>
       <div class="big-btn">
-
+        <div class="big-btn-content">
+          <i class="fas fa-microphone"></i>
+          <span>Stop Video</span>
+        </div>
       </div>
       <div class="big-btn">
-
+        <div class="big-btn-content">
+          <i class="fas fa-microphone"></i>
+          <span>Stop Video</span>
+        </div>
       </div>
     </div>
 
     <div class="foot-right">
-      <span>End Meeting</span>
+      <span class="btn-stop">End Meeting</span>
     </div>
   </footer>
 </body>
