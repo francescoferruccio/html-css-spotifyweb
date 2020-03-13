@@ -50,7 +50,6 @@ header {
 main {
   height: calc(100vh - 130px);
   background-color: #000;
-  ;
   overflow-y: scroll;
   margin-top: 40px;
 }
@@ -122,10 +121,14 @@ footer>div {
   color: green;
 }
 
-.btn-stop {
+.text-stop {
   color: red;
   font-weight: bold;
   margin: 0 10px;
+}
+
+.btn-stop {
+  display: none;
 }
 
 .big-btn:hover {
@@ -138,24 +141,38 @@ footer>div {
     height: calc(100vh - 90px);
   }
 
+  .top-btn span {
+    display: none;
+  }
+
   footer {
     height: 50px;
   }
 
   .big-btn {
-    min-width: 50px;
+    min-width: 30px;
+  }
+
+  .fa-chevron-up {
+    display: none;
   }
 
   .big-btn-content i {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 30px;
+    margin-bottom: 0;
   }
 
   .big-btn-content span {
     display: none;
   }
 
+  .text-stop {
+    display: none;
+  }
+
   .btn-stop {
-    margin-right: 0;
+    display: block;
+    color: red;
+    font-size: 30px;
   }
 }
